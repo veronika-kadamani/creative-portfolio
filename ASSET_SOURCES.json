@@ -1,0 +1,260 @@
+{
+  "folder": "https://drive.google.com/drive/folders/1RptRpWCPgCyDp17liMG5fAui9vZmgkao",
+  "projects": [
+    {
+      "id": "11PQOTdFdT7hAXZQWeYrx5fP-X3-fbgmM",
+      "title": {
+        "en": "Beauty Salon",
+        "ru": "Салон красоты"
+      },
+      "source": "https://drive.google.com/file/d/11PQOTdFdT7hAXZQWeYrx5fP-X3-fbgmM/view?usp=drivesdk",
+      "video": "assets/media/11PQOTdFdT7hAXZQWeYrx5fP-X3-fbgmM.mp4",
+      "poster": "assets/media/11PQOTdFdT7hAXZQWeYrx5fP-X3-fbgmM.jpg"
+    },
+    {
+      "id": "1rF3j5aPwF8S8s0rGa2huVlncqiw4FSPo",
+      "title": {
+        "en": "Cafe 01",
+        "ru": "Кафе 01"
+      },
+      "source": "https://drive.google.com/file/d/1rF3j5aPwF8S8s0rGa2huVlncqiw4FSPo/view?usp=drivesdk",
+      "video": "assets/media/1rF3j5aPwF8S8s0rGa2huVlncqiw4FSPo.mp4",
+      "poster": "assets/media/1rF3j5aPwF8S8s0rGa2huVlncqiw4FSPo.jpg"
+    },
+    {
+      "id": "1o_gjzd8y7oOFSjnYzyLiy4xxhF_a-NHW",
+      "title": {
+        "en": "Gym 4",
+        "ru": "Спортзал 4"
+      },
+      "source": "https://drive.google.com/file/d/1o_gjzd8y7oOFSjnYzyLiy4xxhF_a-NHW/view?usp=drivesdk",
+      "video": "assets/media/1o_gjzd8y7oOFSjnYzyLiy4xxhF_a-NHW.mp4",
+      "poster": "assets/media/1o_gjzd8y7oOFSjnYzyLiy4xxhF_a-NHW.jpg"
+    },
+    {
+      "id": "1BOOWbw5S-XtLfUbKWcTQQW9Ka3Oi0tXU",
+      "title": {
+        "en": "Hotel 2",
+        "ru": "Отель 2"
+      },
+      "source": "https://drive.google.com/file/d/1BOOWbw5S-XtLfUbKWcTQQW9Ka3Oi0tXU/view?usp=drivesdk",
+      "video": "assets/media/1BOOWbw5S-XtLfUbKWcTQQW9Ka3Oi0tXU.mp4",
+      "poster": "assets/media/1BOOWbw5S-XtLfUbKWcTQQW9Ka3Oi0tXU.jpg"
+    },
+    {
+      "id": "1l_NtjRffFbLQd5k3z652ILLZnUXcABm2",
+      "title": {
+        "en": "Restaurant 02",
+        "ru": "Ресторан 02"
+      },
+      "source": "https://drive.google.com/file/d/1l_NtjRffFbLQd5k3z652ILLZnUXcABm2/view?usp=drivesdk",
+      "video": "assets/media/1l_NtjRffFbLQd5k3z652ILLZnUXcABm2.mp4",
+      "poster": "assets/media/1l_NtjRffFbLQd5k3z652ILLZnUXcABm2.jpg"
+    },
+    {
+      "id": "1rbvYdmQXOP4_OW6zIevcJBiFx_Fdyjtl",
+      "title": {
+        "en": "Asia · Food & Lifestyle",
+        "ru": "Азия · Еда и lifestyle"
+      },
+      "source": "https://drive.google.com/file/d/1rbvYdmQXOP4_OW6zIevcJBiFx_Fdyjtl/view",
+      "video": "assets/media/1rbvYdmQXOP4_OW6zIevcJBiFx_Fdyjtl.mp4",
+      "poster": "assets/media/1rbvYdmQXOP4_OW6zIevcJBiFx_Fdyjtl.jpg"
+    },
+    {
+      "id": "1TGlBigaUoNsLV6NoBClKFB9jzboc5eE2",
+      "title": {
+        "en": "Cafe",
+        "ru": "Кафе"
+      },
+      "source": "https://drive.google.com/file/d/1TGlBigaUoNsLV6NoBClKFB9jzboc5eE2/view?usp=drivesdk",
+      "video": "assets/media/1TGlBigaUoNsLV6NoBClKFB9jzboc5eE2.mp4",
+      "poster": "assets/media/1TGlBigaUoNsLV6NoBClKFB9jzboc5eE2.jpg"
+    },
+    {
+      "id": "1IN3PXoARSnQmkbpQPr364HFoINg02M-l",
+      "title": {
+        "en": "Cafe / Drinks",
+        "ru": "Кафе / Напитки"
+      },
+      "source": "https://drive.google.com/file/d/1IN3PXoARSnQmkbpQPr364HFoINg02M-l/view?usp=drivesdk",
+      "video": "assets/media/1IN3PXoARSnQmkbpQPr364HFoINg02M-l.mp4",
+      "poster": "assets/media/1IN3PXoARSnQmkbpQPr364HFoINg02M-l.jpg"
+    },
+    {
+      "id": "1NPtMX3zBvgqVDlBqUqos8sKRTrIA9XHv",
+      "title": {
+        "en": "Cafe 02",
+        "ru": "Кафе 02"
+      },
+      "source": "https://drive.google.com/file/d/1NPtMX3zBvgqVDlBqUqos8sKRTrIA9XHv/view?usp=drivesdk",
+      "video": "assets/media/1NPtMX3zBvgqVDlBqUqos8sKRTrIA9XHv.mp4",
+      "poster": "assets/media/1NPtMX3zBvgqVDlBqUqos8sKRTrIA9XHv.jpg"
+    },
+    {
+      "id": "1sEy7w5h9j4eEGVkQROk_QHeuxZ1Jq0Wn",
+      "title": {
+        "en": "Gym",
+        "ru": "Спортзал"
+      },
+      "source": "https://drive.google.com/file/d/1sEy7w5h9j4eEGVkQROk_QHeuxZ1Jq0Wn/view?usp=drivesdk",
+      "video": "assets/media/1sEy7w5h9j4eEGVkQROk_QHeuxZ1Jq0Wn.mp4",
+      "poster": "assets/media/1sEy7w5h9j4eEGVkQROk_QHeuxZ1Jq0Wn.jpg"
+    },
+    {
+      "id": "1O7thrawklXDgvGqXLWhoecuMmftQS9_q",
+      "title": {
+        "en": "Gym 1",
+        "ru": "Спортзал 1"
+      },
+      "source": "https://drive.google.com/file/d/1O7thrawklXDgvGqXLWhoecuMmftQS9_q/view?usp=drivesdk",
+      "video": "assets/media/1O7thrawklXDgvGqXLWhoecuMmftQS9_q.mp4",
+      "poster": "assets/media/1O7thrawklXDgvGqXLWhoecuMmftQS9_q.jpg"
+    },
+    {
+      "id": "1SVsjopK4Sa92TpnOFf8xSNy0uvnq6ZS5",
+      "title": {
+        "en": "Gym 2",
+        "ru": "Спортзал 2"
+      },
+      "source": "https://drive.google.com/file/d/1SVsjopK4Sa92TpnOFf8xSNy0uvnq6ZS5/view?usp=drivesdk",
+      "video": "assets/media/1SVsjopK4Sa92TpnOFf8xSNy0uvnq6ZS5.mp4",
+      "poster": "assets/media/1SVsjopK4Sa92TpnOFf8xSNy0uvnq6ZS5.jpg"
+    },
+    {
+      "id": "1THjhF28JhEf2IaSelF-wjMV76dz-ISKV",
+      "title": {
+        "en": "Gym 3",
+        "ru": "Спортзал 3"
+      },
+      "source": "https://drive.google.com/file/d/1THjhF28JhEf2IaSelF-wjMV76dz-ISKV/view?usp=drivesdk",
+      "video": "assets/media/1THjhF28JhEf2IaSelF-wjMV76dz-ISKV.mp4",
+      "poster": "assets/media/1THjhF28JhEf2IaSelF-wjMV76dz-ISKV.jpg"
+    },
+    {
+      "id": "1VtCQJRikJ6MpDJtka17FxvVuSx7h1JUo",
+      "title": {
+        "en": "Hair Salon",
+        "ru": "Парикмахерская"
+      },
+      "source": "https://drive.google.com/file/d/1VtCQJRikJ6MpDJtka17FxvVuSx7h1JUo/view?usp=drivesdk",
+      "video": "assets/media/1VtCQJRikJ6MpDJtka17FxvVuSx7h1JUo.mp4",
+      "poster": "assets/media/1VtCQJRikJ6MpDJtka17FxvVuSx7h1JUo.jpg"
+    },
+    {
+      "id": "19OhTFxGi3UDCoFjmHctC4vT5w99MjbW8",
+      "title": {
+        "en": "Hotel 1",
+        "ru": "Отель 1"
+      },
+      "source": "https://drive.google.com/file/d/19OhTFxGi3UDCoFjmHctC4vT5w99MjbW8/view?usp=drivesdk",
+      "video": "assets/media/19OhTFxGi3UDCoFjmHctC4vT5w99MjbW8.mp4",
+      "poster": "assets/media/19OhTFxGi3UDCoFjmHctC4vT5w99MjbW8.jpg"
+    },
+    {
+      "id": "16EQrmsOZBw7OsBr9XSoodnmPn-k2ObO0",
+      "title": {
+        "en": "Instagram Reels 01",
+        "ru": "Instagram Reels 01"
+      },
+      "source": "https://drive.google.com/file/d/16EQrmsOZBw7OsBr9XSoodnmPn-k2ObO0/view?usp=drivesdk",
+      "video": "assets/media/16EQrmsOZBw7OsBr9XSoodnmPn-k2ObO0.mp4",
+      "poster": "assets/media/16EQrmsOZBw7OsBr9XSoodnmPn-k2ObO0.jpg"
+    },
+    {
+      "id": "1h-K20hRVBU7RoBHN4RGAUyV-CT-_i5rq",
+      "title": {
+        "en": "Instagram Reels 02",
+        "ru": "Instagram Reels 02"
+      },
+      "source": "https://drive.google.com/file/d/1h-K20hRVBU7RoBHN4RGAUyV-CT-_i5rq/view?usp=drivesdk",
+      "video": "assets/media/1h-K20hRVBU7RoBHN4RGAUyV-CT-_i5rq.mp4",
+      "poster": "assets/media/1h-K20hRVBU7RoBHN4RGAUyV-CT-_i5rq.jpg"
+    },
+    {
+      "id": "1sYHhT44ZrYXIWxI8c-cbqX-cvpcmkKJP",
+      "title": {
+        "en": "Makeup Reels",
+        "ru": "Макияж · Reels"
+      },
+      "source": "https://drive.google.com/file/d/1sYHhT44ZrYXIWxI8c-cbqX-cvpcmkKJP/view",
+      "video": null,
+      "poster": "assets/media/1sYHhT44ZrYXIWxI8c-cbqX-cvpcmkKJP.jpg"
+    },
+    {
+      "id": "1JOVvAe6og5RlVHwGmgR5zzkfEH4l3sgJ",
+      "title": {
+        "en": "Private School",
+        "ru": "Частная школа"
+      },
+      "source": "https://drive.google.com/file/d/1JOVvAe6og5RlVHwGmgR5zzkfEH4l3sgJ/view?usp=drivesdk",
+      "video": "assets/media/1JOVvAe6og5RlVHwGmgR5zzkfEH4l3sgJ.mp4",
+      "poster": "assets/media/1JOVvAe6og5RlVHwGmgR5zzkfEH4l3sgJ.jpg"
+    },
+    {
+      "id": "13WnkK_W3vYhKCh0RtR4elLTPS3gKMteO",
+      "title": {
+        "en": "Restaurant",
+        "ru": "Ресторан"
+      },
+      "source": "https://drive.google.com/file/d/13WnkK_W3vYhKCh0RtR4elLTPS3gKMteO/view?usp=drivesdk",
+      "video": "assets/media/13WnkK_W3vYhKCh0RtR4elLTPS3gKMteO.mp4",
+      "poster": "assets/media/13WnkK_W3vYhKCh0RtR4elLTPS3gKMteO.jpg"
+    },
+    {
+      "id": "1UOuh3YJ59XPhn2ScfY2fCGgGvI6kXU9M",
+      "title": {
+        "en": "Restaurant 01",
+        "ru": "Ресторан 01"
+      },
+      "source": "https://drive.google.com/file/d/1UOuh3YJ59XPhn2ScfY2fCGgGvI6kXU9M/view?usp=drivesdk",
+      "video": "assets/media/1UOuh3YJ59XPhn2ScfY2fCGgGvI6kXU9M.mp4",
+      "poster": "assets/media/1UOuh3YJ59XPhn2ScfY2fCGgGvI6kXU9M.jpg"
+    },
+    {
+      "id": "18ujEhJuWd48jymcrGOTRWgfEO9ck0jUO",
+      "title": {
+        "en": "Russian Vlog",
+        "ru": "Влог на русском"
+      },
+      "source": "https://drive.google.com/file/d/18ujEhJuWd48jymcrGOTRWgfEO9ck0jUO/view",
+      "video": null,
+      "poster": "assets/media/18ujEhJuWd48jymcrGOTRWgfEO9ck0jUO.jpg"
+    },
+    {
+      "id": "155qVF4UIEHXuYJc5O61VQs2q8ag3rKy6",
+      "title": {
+        "en": "Vet clinic",
+        "ru": "Ветклиника"
+      },
+      "source": "https://drive.google.com/file/d/155qVF4UIEHXuYJc5O61VQs2q8ag3rKy6/view?usp=drivesdk",
+      "video": "assets/media/155qVF4UIEHXuYJc5O61VQs2q8ag3rKy6.mp4",
+      "poster": "assets/media/155qVF4UIEHXuYJc5O61VQs2q8ag3rKy6.jpg"
+    },
+    {
+      "id": "16U-a7v-z25whaHPtHvQJ7j9SWyNroJpd",
+      "title": {
+        "en": "Wedding 01",
+        "ru": "Свадьба 01"
+      },
+      "source": "https://drive.google.com/file/d/16U-a7v-z25whaHPtHvQJ7j9SWyNroJpd/view",
+      "video": null,
+      "poster": "assets/media/16U-a7v-z25whaHPtHvQJ7j9SWyNroJpd.jpg"
+    },
+    {
+      "id": "1r1GgjyotZHdNtwbYi7uJw5XqsyGfG6dl",
+      "title": {
+        "en": "Wedding 02",
+        "ru": "Свадьба 02"
+      },
+      "source": "https://drive.google.com/file/d/1r1GgjyotZHdNtwbYi7uJw5XqsyGfG6dl/view",
+      "video": null,
+      "poster": "assets/media/1r1GgjyotZHdNtwbYi7uJw5XqsyGfG6dl.jpg"
+    }
+  ],
+  "portraits": [
+    "user-supplied main portrait",
+    "user-supplied side portrait"
+  ],
+  "instagramFolder": "https://drive.google.com/drive/folders/1HW0cb2HyadA9wlx3LqZdOc7mfMrXqJZB"
+}
