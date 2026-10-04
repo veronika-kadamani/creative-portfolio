@@ -4,11 +4,13 @@
   let page = document.body.dataset.page || 'home';
   let language;
   try { language = localStorage.getItem('vk-language'); } catch (_) {}
-  let lang = language === 'ru' ? 'ru' : 'en';
+  const languages = ['en','ru','zh','th','km'];
+  const browserLanguage = () => (navigator.languages || [navigator.language]).map(value => String(value).toLowerCase().split('-')[0]).find(value => languages.includes(value)) || 'en';
+  let lang = languages.includes(language) ? language : browserLanguage();
   let filter = 'all';
   let returnFocus;
   const $ = (selector, root = document) => root.querySelector(selector);
-  const t = key => window.COPY[lang][key] || key;
+  const t = key => window.COPY[lang][key] || window.COPY.en[key] || key;
   const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safeUrl = value => {
     if (!value) return '';
@@ -23,7 +25,7 @@
 
   function header() {
     const nav = ['home','portfolio','services','results','about'].map(key => `<a ${page === key ? 'aria-current="page"' : ''} href="${key === 'home' ? 'index' : key}.html">${t(key)}</a>`).join('');
-    return `<a class="skip" href="#main">${t('skip')}</a><header class="header"><a class="wordmark" href="index.html" aria-label="Veronika Kadamani">VERONIKA<span>KADAMANI</span></a><nav id="navigation" aria-label="${t('menu')}">${nav}<a href="#contact">${t('contact')}</a></nav><div class="header-actions"><div class="language" aria-label="Language"><button data-lang="en" aria-pressed="${lang === 'en'}">EN</button><span>|</span><button data-lang="ru" aria-pressed="${lang === 'ru'}">RU</button></div>${quoteButton('quote','button button-small')}<button class="menu-button" aria-label="${t('menu')}" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button></div></header>`;
+    return `<a class="skip" href="#main">${t('skip')}</a><header class="header"><a class="wordmark" href="index.html" aria-label="Veronika Kadamani">VERONIKA<span>KADAMANI</span></a><nav id="navigation" aria-label="${t('menu')}">${nav}<a href="#contact">${t('contact')}</a></nav><div class="header-actions"><div class="language"><select id="language-select" aria-label="${t('language')}"><option value="auto" ${!languages.includes(language) ? 'selected' : ''}>${t('autoLanguage')}</option>${[['en','EN'],['ru','RU'],['zh','中文'],['th','ไทย'],['km','ខ្មែរ']].map(([code,label]) => `<option value="${code}" ${language === code ? 'selected' : ''}>${label}</option>`).join('')}</select></div>${quoteButton('quote','button button-small')}<button class="menu-button" aria-label="${t('menu')}" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button></div></header>`;
   }
   function footer() {
     return `<section class="contact-section" id="contact"><div>${eyebrow('contact')}<h2>${t('ctaA')}<br><em>${t('ctaB')}</em></h2><p>${t('ctaText')}</p>${quoteButton()}</div><div class="contact-links"><a href="https://t.me/girlsbenice" target="_blank" rel="noopener noreferrer"><span>Telegram</span>@girlsbenice</a><a href="mailto:contact.veronika.inbox@gmail.com"><span>${t('email')}</span>contact.veronika.inbox@gmail.com</a><a href="https://www.instagram.com/mrs.kadamani/" target="_blank" rel="noopener noreferrer"><span>Instagram</span>@mrs.kadamani</a><p class="location">${t('location')}<br>${t('filming')}<br>${t('worldwide')}</p></div></section><footer><a class="footer-wordmark" href="index.html">VERONIKA KADAMANI</a><p>${t('footerText')}</p><small>© ${new Date().getFullYear()} ${t('rights')}</small></footer>`;
@@ -65,7 +67,7 @@
       {name:'case1',views:'10.1M',subscribers:'24,221',top:'4.5M',likes:'280K',comments:'4.5K',others:'3.5M · 329K+ · 268K+'},
       {name:'case2',views:'3.6M',subscribers:'1,574',top:'3.2M',likes:'161.9K',comments:'925',others:'123.9K+ · 37K+ · 21K+'}
     ];
-    return `<section class="results-section">${sectionHeader('resultEyebrow','resultTitle','resultIntro')}<div class="case-grid">${cases.map((c,i) => `<article class="case"><div class="case-top"><span>${t(c.name)}</span><span>0${i+1}</span></div><strong class="case-stat">${c.views}</strong><p class="case-stat-label">${t('totalViews')}</p><div class="case-substats"><div><strong>${c.subscribers}</strong><span>${t('subscribers')}</span></div><div><strong>${c.top}</strong><span>${t('topShort')}</span></div></div>${full ? `<div class="case-details"><p>${c.likes} ${t('likes')} · ${c.comments} ${t('comments')}</p><p>${t('otherShorts')}: ${c.others}</p></div>` : ''}</article>`).join('')}</div>${full ? `<article class="tiktok-case"><div><h3>${t('tiktokTitle')}</h3><p>${t('tiktokText')}</p></div><div class="tiktok-values"><strong>533K+</strong><span>378K+ · 371K+ · 370K+ · 297K+ · 265K+ · 264K+</span></div><p>${t('account')}: 4,610 ${t('followers')} · 484.8K ${t('likes')}</p></article><article class="instagram-case"><h3>${t('instagramTitle')}</h3><p>${t('instagramText')}</p><div class="instagram-stats"><div><strong>27,644</strong><span>${t('storyViews')}</span></div><div><strong>83.2%</strong><span>${t('nonFollowers')}</span></div><div><strong>26,568</strong><span>${t('accountsReached')}</span></div></div><div class="evidence-grid">${config.instagramEvidence.map((x,i) => `<a class="evidence-card" href="${safeUrl(x)}" target="_blank" rel="noopener noreferrer"><img src="${safeUrl(x)}" alt="${t('analyticsProof')} ${i+1}" loading="lazy" width="946" height="2048"></a>`).join('')}</div></article><small class="evidence-note">${t('evidenceNote')}</small>` : `<a class="text-link" href="results.html">${t('results')}</a>`}</section>`;
+    return `<section class="results-section">${sectionHeader('resultEyebrow','resultTitle','resultIntro')}<div class="case-grid">${cases.map((c,i) => `<article class="case"><div class="case-top"><span>${t(c.name)}</span><span>0${i+1}</span></div><strong class="case-stat">${c.views}</strong><p class="case-stat-label">${t('totalViews')}</p><div class="case-substats"><div><strong>${c.subscribers}</strong><span>${t('subscribers')}</span></div><div><strong>${c.top}</strong><span>${t('topShort')}</span></div></div>${full ? `<div class="case-details"><p>${c.likes} ${t('likes')} · ${c.comments} ${t('comments')}</p><p>${t('otherShorts')}: ${c.others}</p></div>` : ''}</article>`).join('')}</div>${full ? `<article class="tiktok-case"><div><h3>${t('tiktokTitle')}</h3><p>${t('tiktokText')}</p></div><div class="tiktok-values"><strong>533K+</strong><span>378K+ · 371K+ · 370K+ · 297K+ · 265K+ · 264K+</span></div><p>${t('account')}: 4,610 ${t('followers')} · 484.8K ${t('likes')}</p></article><article class="instagram-case"><h3>${t('instagramTitle')}</h3><p>${t('instagramText')}</p><div class="instagram-stats"><div><strong>27,644</strong><span>${t('storyViews')}</span></div><div><strong>83.2%</strong><span>${t('nonFollowers')}</span></div><div><strong>26,568</strong><span>${t('accountsReached')}</span></div></div><div class="evidence-grid">${config.instagramEvidence.map((x,i) => `<button class="evidence-card" data-evidence="${i}" aria-label="${t('analyticsProof')} ${i+1}"><span class="evidence-crop"><img src="${safeUrl(x)}" alt="${t('analyticsProof')} ${i+1}" loading="lazy" width="946" height="2048"></span></button>`).join('')}</div></article><small class="evidence-note">${t('evidenceNote')}</small>` : `<a class="text-link" href="results.html">${t('results')}</a>`}</section>`;
   }
   function about(full = false) {
     const image = portrait('side');
@@ -114,11 +116,12 @@
     document.body.classList.add('modal-open');
   }
   function bind() {
-    document.querySelectorAll('[data-lang]').forEach(el => el.addEventListener('click', () => {
-      lang = el.dataset.lang;
-      try { localStorage.setItem('vk-language', lang); } catch (_) {}
+    $('#language-select').addEventListener('change', event => {
+      language = event.target.value;
+      lang = languages.includes(language) ? language : browserLanguage();
+      try { if (language === 'auto') localStorage.removeItem('vk-language'); else localStorage.setItem('vk-language', language); } catch (_) {}
       render();
-    }));
+    });
     $('.menu-button').addEventListener('click', event => {
       const button = event.currentTarget;
       const expanded = button.getAttribute('aria-expanded') !== 'true';
@@ -133,6 +136,13 @@
       document.body.dataset.page=page; filter='all'; render(); window.scrollTo({top:0,behavior:'instant'});
     }));
     document.querySelectorAll('[data-quote]').forEach(button => button.addEventListener('click', () => openDialog($('#quote-dialog'), button)));
+    document.querySelectorAll('[data-evidence]').forEach(button => button.addEventListener('click', () => {
+      const source = config.instagramEvidence[Number(button.dataset.evidence)];
+      $('#video-title').textContent = t('analyticsProof');
+      $('#video-content').innerHTML = `<div class="evidence-crop"><img src="${safeUrl(source)}" alt="${t('analyticsProof')}" width="946" height="2048"></div>`;
+      $('#video-description').textContent = '';
+      openDialog($('#video-dialog'), button);
+    }));
     document.querySelectorAll('dialog').forEach(dialog => {
       $('[data-close]',dialog).addEventListener('click', () => dialog.close());
       dialog.addEventListener('click',event => { if(event.target === dialog) { const r=dialog.getBoundingClientRect(); if(event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); }});
